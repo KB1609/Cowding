@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Home Page{% endblock %}
+{% block home_active %}active{% endblock %}
+
+{% block contents %} 
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>
+            Testing Kefas
+        </title>
+        <body>
+            <!-- <h1>Home page</h1>
+            <p>Kefas </p>
+            <p>{{content}}</p> -->
+            <p>{{hehe}}</p>
+            {% if content == "tim" %}
+               <p> bener tim</p>
+               {%else%}
+               <p>bukan tim</p>
+            {% endif%}
+            <!-- {% for x in content %}
+               <p> {{x}}</p>
+            {% endfor%} -->
+        </body>
+    </head>
+</html>
+<h1> Testing homepagessss</h1>
+{% endblock %}
+
+<!DOCTYPE html>
+
